@@ -1,0 +1,4 @@
+SELECT Workers.Name
+FROM Workers
+INNER JOIN Salaries ON Salaries.WorkerID = Workers.ID
+WHERE Salaries.Date = '2009-09-09' AND NOT Salaries.Value > 0;
